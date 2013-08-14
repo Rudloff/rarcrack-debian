@@ -1,0 +1,16 @@
+Source: rarcrack
+Section: utils
+Priority: extra
+Maintainer: Pierre Rudloff <contact@rudloff.pro>
+Build-Depends: debhelper (>= 9), libxml2-dev
+Standards-Version: 3.9.5
+Homepage: http://rarcrack.sourceforge.net/
+
+Package: rarcrack
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Password cracker for rar archives
+ This program uses a brute force algorithm to guess your encrypted compressed
+ file's password.
+ .
+ This program can crack zip,7z and rar file passwords.
