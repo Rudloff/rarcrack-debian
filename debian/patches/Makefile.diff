@@ -4,11 +4,9 @@ Author: Pierre Rudloff <contact@rudloff.pro>
 Forwarded: https://sourceforge.net/p/rarcrack/bugs/13/
 Last-Update: 2013-08-14
 
-Index: rarcrack-0.2/Makefile
-===================================================================
---- rarcrack-0.2.orig/Makefile	2014-01-26 12:11:46.854394728 +0100
-+++ rarcrack-0.2/Makefile	2014-01-26 12:11:50.230394685 +0100
-@@ -1,16 +1,22 @@
+--- a/Makefile
++++ b/Makefile
+@@ -1,16 +1,21 @@
  CC=gcc
 -PREFIX=/usr
 -DOCDIR=${PREFIX}/share/doc/rarcrack
@@ -31,8 +29,9 @@ Index: rarcrack-0.2/Makefile
 +	install -s rarcrack ${BINDIR}
  	-mkdir -p ${DOCDIR}
  	chmod 755 ${DOCDIR}
- 	install -m 644 -t ${DOCDIR} CHANGELOG LICENSE README README.html RELEASE_NOTES
+-	install -m 644 -t ${DOCDIR} CHANGELOG LICENSE README README.html RELEASE_NOTES
++	install -m 644 -t ${DOCDIR} CHANGELOG README README.html RELEASE_NOTES
  uninstall:
 -	-rm ${PREFIX}/bin/rarcrack
+-
 +	-rm ${BINDIR}/rarcrack
- 
