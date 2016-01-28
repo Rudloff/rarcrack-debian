@@ -3,7 +3,7 @@ Section: utils
 Priority: extra
 Maintainer: Pierre Rudloff <contact@rudloff.pro>
 Build-Depends: debhelper (>= 9), libxml2-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://rarcrack.sourceforge.net/
 Vcs-Git: https://github.com/Rudloff/rarcrack-debian.git
 
